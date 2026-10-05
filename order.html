@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Corner | Order</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <header class="topbar">
+    <div class="container nav-wrap">
+    <a class="logo" href="index.html">🍴 <span>Spice Corner</span>
+    </a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a class="active" href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    </nav>
+    </div>
+    </header>
+    <main>
+    <section class="page-banner">
+    <div class="container">
+    <p class="eyebrow">ONLINE ORDER</p>
+    <h1>Place your food order</h1>
+    <p>Select items, set quantity and watch the bill change instantly.</p>
+    </div>
+    </section>
+    <section class="section">
+    <div class="container order-layout">
+    <form id="orderForm" class="order-form" onsubmit="placeOrder(event)">
+    <h2>Your Details</h2>
+    <div class="form-grid">
+    <div>
+    <label for="name">Name *</label>
+    <input id="name" required type="text" placeholder="Enter your name">
+    </div>
+    <div>
+    <label for="phone">Phone *</label>
+    <input id="phone" required type="tel" pattern="[0-9]{10}" placeholder="10 digit number">
+    </div>
+    </div>
+    <label for="address">Delivery Address *</label>
+    <textarea id="address" required placeholder="Enter your address">
+    </textarea>
+    <h2>Select Food</h2>
+    <div class="order-item">
+    <div>
+    <b>Cheese Pizza</b>
+    <span>₹180</span>
+    </div>
+    <input class="qty" data-price="180" type="number" min="0" value="0" aria-label="Cheese Pizza quantity">
+    </div>
+    <div class="order-item">
+    <div>
+    <b>Veg Burger</b>
+    <span>₹120</span>
+    </div>
+    <input class="qty" data-price="120" type="number" min="0" value="0" aria-label="Veg Burger quantity">
+    </div>
+    <div class="order-item">
+    <div>
+    <b>White Sauce Pasta</b>
+    <span>₹160</span>
+    </div>
+    <input class="qty" data-price="160" type="number" min="0" value="0" aria-label="White Sauce Pasta quantity">
+    </div>
+    <div class="order-item">
+    <div>
+    <b>French Fries</b>
+    <span>₹90</span>
+    </div>
+    <input class="qty" data-price="90" type="number" min="0" value="0" aria-label="French Fries quantity">
+    </div>
+    <div class="order-item">
+    <div>
+    <b>Veg Sandwich</b>
+    <span>₹100</span>
+    </div>
+    <input class="qty" data-price="100" type="number" min="0" value="0" aria-label="Veg Sandwich quantity">
+    </div>
+    <label for="payment">Payment Method</label>
+    <select id="payment">
+    <option>Cash on Delivery</option>
+    <option>UPI</option>
+    <option>Card</option>
+    </select>
+    <button class="btn full-btn" type="submit">Place Order</button>
+    <p id="orderMessage" class="success-message">
+    </p>
+    </form>
+    <aside class="bill">
+    <div class="bill-icon">🧾</div>
+    <h2>Your Bill</h2>
+    <p>Order summary</p>
+    <div class="bill-row">
+    <span>Subtotal</span>
+    <b id="subtotal">₹0</b>
+    </div>
+    <div class="bill-row">
+    <span>Delivery</span>
+    <b id="delivery">₹40</b>
+    </div>
+    <div class="bill-row">
+    <span>Discount</span>
+    <b id="discount">₹0</b>
+    </div>
+    <div class="bill-total">
+    <span>Total</span>
+    <b id="total">₹40</b>
+    </div>
+    <small>Free delivery on orders above ₹500.</small>
+    </aside>
+    </div>
+    </section>
+    </main>
+    <footer>
+    <div class="container footer-grid">
+    <div>
+    <a class="logo" href="index.html">🍴 <span>Spice Corner</span>
+    </a>
+    <p>Fresh food for everyday moments.</p>
+    </div>
+    <div>
+    <h4>Quick Links</h4>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+    </div>
+    <div>
+    <h4>Visit Us</h4>
+    <p>12 Food Street, Your City</p>
+    <p>+91 98765 43210</p>
+    </div>
+    </div>
+    <div class="copyright">© 2026 Spice Corner Restaurant</div>
+    </footer>
+    <script src="js/script.js">
+    </script>
+    </body>
+</html>

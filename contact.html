@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Corner | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <header class="topbar">
+    <div class="container nav-wrap">
+    <a class="logo" href="index.html">🍴 <span>Spice Corner</span>
+    </a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+    </nav>
+    </div>
+    </header>
+    <main>
+    <section class="page-banner">
+    <div class="container">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>We would love to hear from you</h1>
+    <p>Questions, feedback or just want to say hello?</p>
+    </div>
+    </section>
+    <section class="section">
+    <div class="container contact-grid">
+    <div class="contact-cards">
+    <div class="contact-card">
+    <span>📍</span>
+    <div>
+    <h3>Address</h3>
+    <p>12 Food Street, Your City</p>
+    </div>
+    </div>
+    <div class="contact-card">
+    <span>📞</span>
+    <div>
+    <h3>Phone</h3>
+    <p>+91 98765 43210</p>
+    </div>
+    </div>
+    <div class="contact-card">
+    <span>✉️</span>
+    <div>
+    <h3>Email</h3>
+    <p>hello@spicecorner.com</p>
+    </div>
+    </div>
+    <div class="contact-card">
+    <span>🕐</span>
+    <div>
+    <h3>Opening Hours</h3>
+    <p>11:00 AM - 10:30 PM</p>
+    </div>
+    </div>
+    </div>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+    <h2>Send a Message</h2>
+    <label for="cname">Your Name *</label>
+    <input id="cname" required type="text" placeholder="Your name">
+    <label for="email">Email *</label>
+    <input id="email" required type="email" placeholder="you@example.com">
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" placeholder="How can we help?">
+    <label for="message">Message *</label>
+    <textarea id="message" required placeholder="Write your message">
+    </textarea>
+    <button class="btn" type="submit">Send Message</button>
+    <p id="contactMessage" class="success-message">
+    </p>
+    </form>
+    </div>
+    </section>
+    <section class="section warm-bg">
+    <div class="container map-box">
+    <span>📍</span>
+    <div>
+    <h2>Come visit us</h2>
+    <p>We are open every day for dine-in and takeaway.</p>
+    </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+    <div class="container footer-grid">
+    <div>
+    <a class="logo" href="index.html">🍴 <span>Spice Corner</span>
+    </a>
+    <p>Fresh food for everyday moments.</p>
+    </div>
+    <div>
+    <h4>Quick Links</h4>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+    </div>
+    <div>
+    <h4>Visit Us</h4>
+    <p>12 Food Street, Your City</p>
+    <p>+91 98765 43210</p>
+    </div>
+    </div>
+    <div class="copyright">© 2026 Spice Corner Restaurant</div>
+    </footer>
+    <script src="js/script.js">
+    </script>
+    </body>
+</html>
